@@ -8,27 +8,27 @@ import { motion } from "framer-motion";
 
 import Benefit from "./Benefit";
 
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
+import HelmetGraphic from "@/assets/helmet-full.jpg";
 import { BenefitType, SelectedPage } from "@/shared/types";
 import HText from "@/shared/HText";
 import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
     {
-      icon: <HomeModernIcon className="h-6 w-6" />,
-      title: "State of the Art Facilities",
+      icon: <HomeModernIcon className="h-6 w-6"/>,
+      title: "56 Tuning Garages",
       description:
         "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
     },
     {
       icon: <UserGroupIcon className="h-6 w-6" />,
-      title: "100's of Diverse Classes",
+      title: "Race Drivers Community",
       description:
         "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
     },
     {
       icon: <AcademicCapIcon className="h-6 w-6" />,
-      title: "Expert and Pro Trainers",
+      title: "Certified Car Tuners",
       description:
         "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
     },
@@ -68,8 +68,8 @@ onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
           }}
           
         >
-          <HText>MORE THAN JUST GYM.</HText>
-          <p className="my-5 text-sm">
+          <HText>MORE THAN JUST A <span className="text-brand-button">TUNING</span></HText>
+          <p className="my-5 text-md">
             We provide world class fitness equipment, trainers and classes to
             get you to your ultimate fitness goals with ease. We provide true
             care into each and every member.
@@ -96,16 +96,16 @@ onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
           ))}
         </motion.div>
       {/* GRAPHICS & DESCRIPTION */}
-      <div className="mt-16 items-center justify-between gap-20 md:mt-20 md:flex">
+      <div className="mt-16 items-center justify-between gap-20 md:mt-20 md:flex w-90 ml-0">
       {/* GRAPHIC */}
-      <img src={BenefitsPageGraphic} 
-      alt="benefits-page-graphic" className="mx-auto" />
+      <img src={HelmetGraphic} 
+      alt="benefits-page-graphic" className="mx-auto w-3/6 marker:bg-white"/>
       {/* DESCRIPTION */}
       <div>
         {/* TITLE */}
         <div className="relative">
       <div className="before:absolute before:-top-20 before:-left-20 before:z-[1]
-       before:content-abstractwaves">
+       before:content">
          <motion.div
            initial="hidden"
            whileInView="visible"
@@ -117,9 +117,9 @@ onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
            }}
          >
           <HText>
-           FATION TONY MONTANA {" "}
-            <span className="text-primary-500">
-               FIT
+           FULL SECURITY FOR YOUR {" "}
+            <span className="text-brand-button">
+              CAR
             </span>
           </HText>
          </motion.div>
@@ -153,7 +153,7 @@ onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
     <div className="before:absolute before:-bottom-20 before:right-40
      before:z-[-1] before:content-sparkles">
   <ActionButton setSelectedPage={setSelectedPage}>
-    Join Now
+    Find Out Now
   </ActionButton>
     </div>
 

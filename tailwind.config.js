@@ -18,21 +18,22 @@ export default {
     extend: {
       colors:{
         "brand-blue": "#2f80ed",
-        "brand-red": "#eb5757", 
+        "brand-button": "red", 
         "brand-green": "#27ae60",
+        "primary-100": "rgb(225, 218, 218, 0.340)",
       },
       backgroundImage: (theme) => ({
-        "gradient-yellowred": "linear-gradient(135deg, #FFC000 0%, #FF6C68 100%)",
+        
         "mobile-home": "url('/src/assets/images/mobile-home.png')",
+        
     }),
     fontFamily: {
       dmsans: ["DM Sans", "sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
     },
     content: {
-      evolvetext: "url('./assets/EvolveText.png')",
-      abstractwaves: "url('./assets/AbstractWaves.png')",
-      sparkles: "url('./assets/Sparkles.png')",
+     
+      sparkles: "url('./assets/flag.jpg')",
       circles: "url('./assets/Circles.png')",
     },
 

@@ -14,7 +14,7 @@ export default function Link({page, selectedPage, setSelectedPage}: Props) {
   return (
     <AnchorLink
     className={`${selectedPage === loweCasePage ? "text-primary-500" : "" }
-      transition duration-500 hover:text-primary-300`}
+      hover:text-primary-300`}
     href={`#${loweCasePage}`}
     onClick={() => setSelectedPage(loweCasePage)}
     >

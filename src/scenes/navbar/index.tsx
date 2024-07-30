@@ -18,7 +18,7 @@ export default function NavBar({ isTopOfPage, selectedPage, setSelectedPage}: Pr
     const flexBetween = "flex justify-between items-center"
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-    const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+    const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow shadow-md";
   return (
     <nav>
     <div
@@ -27,12 +27,12 @@ export default function NavBar({ isTopOfPage, selectedPage, setSelectedPage}: Pr
       <div className={`${flexBetween} mx-auto w-5/6`}>
         <div className={`${flexBetween} w-full gap-16`}>
           {/* LEFT SIDE */}
-          <img alt="logo" src={Logo} />
+          <img alt="logo" src={Logo} className="w-60"/>
 
           {/* RIGHT SIDE */}
           {isAboveMediumScreens ? (
             <div className={`${flexBetween} w-full`}>
-              <div className={`${flexBetween} gap-8 text-sm`}>
+              <div className={`${flexBetween} gap-8 text-md racing-font text-black`}>
                 <Link
                   page="Home"
                   selectedPage={selectedPage}
@@ -55,15 +55,15 @@ export default function NavBar({ isTopOfPage, selectedPage, setSelectedPage}: Pr
                 />
               </div>
               <div className={`${flexBetween} gap-8`}>
-                <p>Sign In</p>
+             <a href="#">   <p className="racing-font text-black">Sign In</p></a>
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Become a Member
+                 <span className="racing-font rounded-full p-2"> Become a Member</span>
                 </ActionButton>
               </div>
             </div>
           ) : (
             <button
-              className="rounded-full bg-secondary-500 p-2"
+              className="rounded-full p-2 text-black"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               <Bars3Icon className="h-6 w-6 text-white" />
@@ -75,7 +75,7 @@ export default function NavBar({ isTopOfPage, selectedPage, setSelectedPage}: Pr
 
     {/* MOBILE MENU MODAL */}
     {!isAboveMediumScreens && isMenuToggled && (
-      <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+      <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] drop-shadow-xl">
         {/* CLOSE ICON */}
         <div className="flex justify-end p-12">
           <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

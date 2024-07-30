@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
+import DriversTeamGraphic from "@/assets/team-drivers-graphic.png";
 import { useForm } from "react-hook-form";
 
 
@@ -12,7 +12,7 @@ type Props = {
 }
 
 export default function ContactUs({setSelectedPage}: Props) {
-  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`
+  const inputStyles = `mb-5 w-full rounded-lg px-5 py-3 placeholder-white bg-brand-button`
 
   const {
     register,
@@ -42,8 +42,9 @@ export default function ContactUs({setSelectedPage}: Props) {
        visible: { opacity: 1, x: 0 },
      }}>
 <HText>
-    <span className="text-primary-500">JOIN NOW </span>
-    TO GET IN SHAPE
+  BECOME OUR
+    <span className="text-brand-button"> MEMBER </span>
+   
 </HText>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat modi fugiat sunt beatae enim laudantium rerum laboriosam debitis facilis omnis sit et dicta molestiae minima ea tempore, fuga hic.</p>
    </motion.div>
@@ -117,7 +118,7 @@ export default function ContactUs({setSelectedPage}: Props) {
       </p>
      )}
      <button type="submit"
-      className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+      className="mt-5 rounded-lg bg-brand-button px-20 py-3 transition duration-500 hover:text-white text-black"
      >SUBMIT</button>
    </form>
     </motion.div>
@@ -132,9 +133,9 @@ export default function ContactUs({setSelectedPage}: Props) {
       visible: { opacity: 1, y: 0 },
     }}>
     <div className="w-full before:absolute before:-bottom-20 
-                    before:-right-10 before:z-[-1] md:before:content-evolvetext">
-      <img src={ContactUsPageGraphic} 
-      className="w-full"
+                    before:-right-10 before:z-[-1] ">
+      <img src={DriversTeamGraphic} 
+      className="w-full mb-3"
       alt="Contact Us Page Graphic" />
     </div>
     </motion.div>

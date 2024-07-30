@@ -21,7 +21,7 @@ opacity-0 transition duration-500 hover:opacity-90`
     <p className="mt-5">{description}</p>
    
       </div>
-      <img alt={`${image}`}  src={image}/>  
+      <img alt={`${image}`}  src={image} className="h-[330px]"/>  
     
       </li>
     

@@ -14,3 +14,17 @@ body,
     font-family: "DM Sans", sans-serif;
   @apply text-gray-500;
 }
+.sponsors img {
+max-width: 200px;
+}
+
+.faster-font{
+  font-family: 'Faster One', cursive;
+ font-weight: 100;
+
+  color: black;
+}
+.racing-font{
+  font-family: 'Racing Sans One', cursive;
+ /* background-color: rgba(241, 234, 234, 0.348); */
+}
