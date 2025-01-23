@@ -1,0 +1,23 @@
+[
+  {
+    "role": "Front-End Student",
+    "organisation": "Brainster.Mk",
+    "startDate": "05/2023",
+    "endDate": "06/2024",
+    "imageSrc": "skills/Logo.png",
+    "description": "Front-End Academy with 1 year of duration working with many frameworks and libraries and real-client projects",
+    "projectText": "I have some of my projects bellow"
+   
+  },
+  
+  {
+    "role": "React Developer",
+    "organisation": "Ananas.Mk",
+    "startDate": "01/2024",
+    "endDate": "06/2024",
+    "imageSrc": "skills/ananas.png",
+    "description": "React Developer , Part-Time-Internship",
+    "projectText": ""
+  }
+ 
+]

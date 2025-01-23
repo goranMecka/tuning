@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Tuning-App",
+    "imageSrc": "projects/screenshot.png",
+    "description": "Responsive React/TypeScript app with Tailwind styles.",
+    "skills": ["React", "Tailwind", "TypeScript"],
+    "demo": "https://64ea2861.tuningdeploy.pages.dev",
+    "source": "https://github.com/goranMecka/tuning/tree/gtiDeploy"
+  },
+  {
+    "title": "Bike-App React",
+    "imageSrc": "projects/Screenshot-bikes-app.png",
+    "description": "React app with fetch API and filters, styled with bootstrap.",
+    "skills": ["Html", "Css", "Bootstrap", "React"],
+    "demo": "https://88aab9b9.tuningdeploy.pages.dev/",
+    "source": "https://github.com/goranMecka/tuning/tree/bikesApp"
+  },
+  {
+    "title": "Gazoom Blog App",
+    "imageSrc": "projects/gazoom-blog.png",
+    "description": "This is a responsive app with 4 pages: Home, About, Contact and Blog.",
+    "skills": ["Html", "Css", "Bootstrap", "React"],
+    "demo": "https://7677f75d.tuningdeploy.pages.dev/",
+    "source": ""
+  }
+ 
+ 
+ 
+ 
+]
