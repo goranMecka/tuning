@@ -16,12 +16,12 @@
     "source": "https://github.com/goranMecka/tuning/tree/placepicker"
   },
   {
-    "title": "Gazoom Blog App",
-    "imageSrc": "projects/gazoom-blog.png",
-    "description": "This is a responsive app with 4 pages: Home, About, Contact and Blog.",
-    "skills": ["Html", "Css", "Bootstrap", "React"],
-    "demo": "https://7677f75d.tuningdeploy.pages.dev/",
-    "source": ""
+    "title": "Shopping Cart",
+    "imageSrc": "projects/redux-cart.png",
+    "description": "This is React-Redux app with dispatch actions and manage slices",
+    "skills": ["html", "css", "react-redux"],
+    "demo": "https://49a3ce26.tuningdeploy.pages.dev/",
+    "source": "https://github.com/goranMecka/tuning.git"
   }
  
  
